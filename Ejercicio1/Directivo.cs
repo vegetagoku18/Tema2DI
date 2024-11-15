@@ -6,13 +6,25 @@ using System.Threading.Tasks;
 
 namespace Ejercicio1
 {
-    internal class Directivo : Persona
+    internal class Directivo : Persona, IPastaGansa
     {
+        private double PastaGanada;
+        IPastaGansa pastaGansa = new Directivo();
+        double IPastaGansa.ganarPasta(double ingresos)
+        {
+            PastaGanada = ingresos * beneficios / 100;
+            if (PastaGanada < 0)
+            {
+                PastaGanada = 0;
+                --beneficios;
+            }
+            return PastaGanada;
+        }
         public Directivo() { }
 
         public override double hacienda()
         {
-            return 2;
+            return PastaGanada * 0.3;
         }
 
         private string departamentos;
@@ -90,7 +102,10 @@ namespace Ejercicio1
         public override void IntroduccirDatos()
         {
             base.IntroduccirDatos();
-            Console.WriteLine();
+            Console.WriteLine("Nombre del dpto: ");
+            Departamentos = Console.ReadLine();
+            Console.WriteLine("nº de trabajadores: ");
+            bool prueba = int.TryParse(Console.ReadLine(), out this.trabajadores);
         }
     }
 }

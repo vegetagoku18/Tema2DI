@@ -18,6 +18,7 @@ namespace Ejercicio1
     {
         public static void Main()
         {
+            /*
             Prueba p = new Prueba();
             p.Nombre = "Carlos";
             p.Apellidos = "Paz";
@@ -30,6 +31,9 @@ namespace Ejercicio1
             esclavo.Dni = "85792537";
             esclavo.Salario = 10;
             esclavo.Telefono = "30457457";
+            */
+            Directivo carlos = new Directivo();
+            carlos.IntroduccirDatos();
         }
     }
 }

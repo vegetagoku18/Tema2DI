@@ -12,6 +12,8 @@ namespace Ejercicio1
         {
             base.MuestraDatos();
             Console.WriteLine("{0}€", Salario);
+            Console.WriteLine("{0}%", Irpf);
+            Console.WriteLine("{0}", Telefono);
         }
 
         public void MuestraDatos(int pedido)//Solo 1 parametro
@@ -52,7 +54,7 @@ namespace Ejercicio1
         {
             get
             {
-               
+
                 return salario;
             }
             set//Cambiar irpf

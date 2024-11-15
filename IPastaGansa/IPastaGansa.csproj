@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1B032B4E-DBAC-4AF6-8F85-D81B7530FA79}</ProjectGuid>
+    <ProjectGuid>{B9EABE71-0974-46BA-8475-00FABAAEA55B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ejercicio1</RootNamespace>
-    <AssemblyName>Ejercicio1</AssemblyName>
+    <RootNamespace>IPastaGansa</RootNamespace>
+    <AssemblyName>IPastaGansa</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmpleadoEspecial.cs" />
-    <Compile Include="Persona.cs" />
-    <Compile Include="Directivo.cs" />
-    <Compile Include="Empleado.cs" />
-    <Compile Include="IPastaGansa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
